@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-body {
+    background-image: url(../assets/fondo-index.jpg);
+}
+
+
+/* HEADER */
+
+.container-header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(255, 255, 255, 0.508));
+    box-shadow: 2px 3px rgba(255, 255, 255, 0.551);
+    height: 90px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-ul-li {
+    margin: 0 50px;
+    padding: 6px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.856);
+    transition: 0.5s;
+}
+.nav-ul-li:hover {
+    font-size: 22px;
+}
+
+.nav-ul-li-a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+.container-main-index {
+    display: grid;
+    justify-items: center;
+    font-family: 'Public Sans', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "box1 box2";
+}
+
+.box-1 {
+    grid-area: box1;
+    text-align: center;
+    margin: 50px;
+}
+.box-1 h1 {
+    padding-bottom: 70px;
+    font-size: 70px;
+}
+
+.box-1 h2 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.box-1 p {
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.main-index-button {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 2px 2px 4px rgb(123, 123, 123);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.main-index-button:hover {
+    padding: 11px;
+    font-size: 21px;
+    box-shadow: 3px 3px 6px rgb(92, 92, 92);
+}
+
+.box-2 {
+    grid-area: box2;
+}
+/* MAIN */
+
+
+
+/* FOOTER */
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(82, 82, 82);
+}
+
+.footer-box-redes {
+    grid-column: 3;
+}
+
+.footer-box-copyright {
+    grid-column: 2;
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+.redes {
+    width: 45px;
+    margin: 5px;
+}
+/* FOOTER */
